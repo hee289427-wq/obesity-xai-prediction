@@ -307,16 +307,24 @@ def build_shap_waterfall_figure(
     )
 
     figure = plt.gcf()
-    figure.set_size_inches(10.5, 5.8)
+    figure.set_size_inches(11, 6.8)
     figure.patch.set_facecolor("white")
+
+    # Reserve space at the top so the title is not cropped
+    figure.subplots_adjust(
+        left=0.24,
+        right=0.97,
+        bottom=0.14,
+        top=0.86,
+    )
+
     figure.suptitle(
         "Feature Contributions for the Original Prediction",
-        fontsize=14,
+        fontsize=15,
         fontweight="bold",
         x=0.5,
-        y=1.02,
+        y=0.96,
     )
-    figure.tight_layout()
 
     return figure
 
