@@ -606,6 +606,8 @@ CUSTOM_CSS = """
     font-size: clamp(32px, 4vw, 54px);
     line-height: 1.05;
     letter-spacing: -0.035em;
+    color: #ffffff;
+    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.22);
 }
 
 .hero-shell p {
