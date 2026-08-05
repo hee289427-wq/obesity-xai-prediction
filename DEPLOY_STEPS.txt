@@ -1,0 +1,7 @@
+1. Put ObesityDataSet_raw_and_data_sinthetic.csv in this folder.
+2. Upload all files to the root of a GitHub repository.
+3. On Render, create New > Web Service and connect that repository.
+4. Set Runtime to Python 3.
+5. Build Command: pip install -r requirements.txt
+6. Start Command: python app.py
+7. Choose the Free instance and deploy.
